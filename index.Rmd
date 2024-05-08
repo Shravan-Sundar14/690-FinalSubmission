@@ -1,0 +1,71 @@
+---
+title: "My Storyboard at DACSS "
+
+bibliography : testVisual.bib
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+## Sidebar {.sidebar}
+
+**Context**
+
+Tech firms around the globe are fighting the economic slowdown. The slow consumer spending, higher interest rates by central banks and strong dollars overseas are hinting towards possible recession and tech firms have started laying employees off. This economic slowdown has made Meta recently fire 13% of its workforce, which amounts to more than 11,000 employees. This data interpretation was made with the hope to enable our community to look into analyzing recent tech turmoil and discover useful insights.
+
+The data availability is from when COVID-19 was declared as a pandemic i.e. **11 March 2020** to present (**20 April 2024**).\
+
+Code Link : <https://github.com/Shravan-Sundar14/690-FinalSubmission>
+
+## Column {.tabset .tabset-fade}
+
+### Cout of companies under each industry
+
+```{r}
+readRDS("draft1.rds")
+```
+
+### Unemployment By Country
+
+```{r}
+readRDS("Plot2.rds")
+```
+
+### Precentage of Layoff By Industry
+
+```{r}
+readRDS("Plot3.rds")
+```
+
+### Company Size V/S Money Raised(Before Layoff)
+
+```{r}
+readRDS("Plot4.rds")
+```
+
+### Relation between company size and money raised (After layoff)
+
+```{r}
+readRDS("Plot5.rds")
+```
+
+### Layoffs of companies by Industry
+
+```{r}
+readRDS("Plot6.rds")
+```
+
+### Money rasied in Mil by companies in Asia
+
+```{r}
+readRDS("Plot7.rds")
+```
+
+### References
+
+**Link to the Kaggle Dataset :** <https://www.kaggle.com/datasets/theakhilb/layoffs-data-2022/data>
+
+**Original dataset** can be tracked at :  <https://layoffs.fyi/>
