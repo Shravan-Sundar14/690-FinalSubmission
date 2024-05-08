@@ -1,0 +1,69 @@
+---
+title: "My Storyboard at DACSS - tabs"
+
+output: 
+  flexdashboard::flex_dashboard
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+## Sidebar {.sidebar}
+
+
+Preparing the dashboard based on the instructions given at @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2023.
+
+## Column {.tabset .tabset-fade}
+
+
+### Histogram Of Cout of companies under each industry
+
+```{r}
+readRDS("draft1.rds")
+```
+
+
+### Percentage of Unemployment By Country
+
+```{r}
+readRDS("Plot2.rds")
+```
+
+### Box Plot of Precentage of Layoff By Industry
+
+```{r}
+readRDS("Plot3.rds")
+```
+
+
+### Bi Variate Plot - Relationship between Company Size and Money Raised(Before Layoff)
+
+```{r}
+readRDS("Plot4.rds")
+```
+
+
+### Multi Variate Plot - Relation between company size and money raised (After layoff) 
+
+```{r}
+readRDS("Plot5.rds")
+```
+
+
+### Map Plot of Layoffs of companies by Industry
+
+```{r}
+readRDS("Plot6.rds")
+```
+
+
+### Map Plot concerning money rasied in Mil by companies in Asia
+
+```{r}
+readRDS("Plot7.rds")
+```
+
+
+### References : 
+
