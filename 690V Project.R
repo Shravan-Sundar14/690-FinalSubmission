@@ -56,7 +56,7 @@ Plot4 <- Plot4 + scale_x_continuous(labels = scales::number_format(scale = 1e-0)
 Plot4
 saveRDS(Plot4,"Plot4.rds")
 
-Plot5 <- ggplot(df1, aes(x = Company_Size_after_layoffs, y = Money_Raised_in_mil, color = Industry)) +
+Plot5 <- ggplot(df1, aes(x = Company_Size_after_layoffs, y = Money_Raised_in_mil)) +
   geom_point(size = 3, shape = 16) +  
   labs(title = "Relationship between Company Size and Money Raised",
        subtitle = "after Layoffs",  
@@ -83,7 +83,7 @@ Plot7 = ggplot() +
   borders("world", colour = "gray50", fill = "gray50") +
   geom_point(data = df1, aes(x = lng, y = lat, size = Money_Raised_in_mil, color = Continent), alpha = 0.7) +
   scale_size_continuous(name = "Money Raised (in mil)", labels = scales::comma) +
-  scale_color_manual(name = "Continent", values = c("Asia" = "blue", "Other" = "green")) +
+  scale_color_manual(name = "Continent", values = c("Asia" = "blue", "Africa" = "green", "Europe"="white" , "North America"="yellow", "Australia"="pink","South America"="red" )) +
   labs(title = "Map Plot of Company Headquarters",
        subtitle = "Money Raised by Companies across Continents",
        x = "Longitude", y = "Latitude",caption = "Source : Kaggle") +

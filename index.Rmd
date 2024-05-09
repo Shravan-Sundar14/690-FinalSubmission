@@ -22,7 +22,7 @@ Code Link : <https://github.com/Shravan-Sundar14/690-FinalSubmission>
 
 ## Column {.tabset .tabset-fade}
 
-### Cout of companies under each industry
+### Count of companies under each industry
 
 ```{r}
 readRDS("draft1.rds")
@@ -58,7 +58,7 @@ readRDS("Plot5.rds")
 readRDS("Plot6.rds")
 ```
 
-### Money rasied in Mil by companies in Asia
+### Money rasied in Mil by companies accross Continents
 
 ```{r}
 readRDS("Plot7.rds")
